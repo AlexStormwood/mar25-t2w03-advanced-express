@@ -7,6 +7,7 @@ Middleware, git collab practice, authentication and authorisation.
 
 `node --env-file-if-exists=.env ./src/index.js` is the built-in way to process a .env file now, no need for dotenv for default usage.
 
+`npm install jsonwebtoken validator` to get the latest packages for auth stuff!
 
 # Auth Plans
 
