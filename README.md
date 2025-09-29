@@ -8,6 +8,15 @@ Middleware, git collab practice, authentication and authorisation.
 `node --env-file-if-exists=.env ./src/index.js` is the built-in way to process a .env file now, no need for dotenv for default usage.
 
 
+# Auth Plans
+
+- User model in Mongoose needs a pre-save hook ensure passwords are hashed and salted
+	- Validators _should_ be implemented on the User model for things like password length as well
+	- A property that is either a simple boolean for things like "isAdmin" or a foreign key reference to a Role model _should_ be implemented to implement authorization
+- Middleware to validate base username/email + password authentication must be implemented
+- Middleware to validate JWTs must be implemented
+
+
 # Contributors
 
 - [AlexStormwood](https://github.com/AlexStormwood)

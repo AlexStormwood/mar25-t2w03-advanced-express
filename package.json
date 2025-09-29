@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev":"node --env-file-if-exists=.env --watch-path=./ --watch-preserve-output ./src/index.js",
-    "start":"node --env-file-if-exists=.env ./src/index.js"
+    "dev": "node --env-file-if-exists=.env --watch-path=./ --watch-preserve-output ./src/index.js",
+    "start": "node --env-file-if-exists=.env ./src/index.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,9 @@
   },
   "homepage": "https://github.com/AlexStormwood/mar25-t2w03-advanced-express#readme",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.18.2",
+    "validator": "^13.15.15"
   }
 }
